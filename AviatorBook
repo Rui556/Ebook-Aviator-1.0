@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Segredo Revelado: Entenda o Aviator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda como analisar os gráficos do Aviator e aumentar suas chances com nosso eBook gratuito. Exclusivo para usuários 888Bets.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #1f0029, #45002e);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #fff;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .plane-animation {
+      width: 100%;
+      max-width: 300px;
+      margin: 30px auto 10px;
+      animation: fly 5s infinite linear;
+    }
+
+    @keyframes fly {
+      0% { transform: translateX(-150%) translateY(0); }
+      50% { transform: translateX(0%) translateY(-10px); }
+      100% { transform: translateX(150%) translateY(-20px); }
+    }
+
+    .chart {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      animation: coef 2s infinite ease-in-out;
+    }
+
+    @keyframes coef {
+      0% { content: "1.01x"; }
+      25% { content: "2.35x"; }
+      50% { content: "4.88x"; }
+      75% { content: "12.75x"; }
+      100% { content: "1.01x"; }
+    }
+
+    .btn-container {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 15px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-orange {
+      background-color: #ff8c00;
+      color: #fff;
+    }
+
+    .btn-blue {
+      background-color: #0088cc;
+      color: #fff;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #ccc;
+      padding: 20px;
+    }
+
+    .ebook-image {
+      width: 200px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 100, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔥 Revelamos o Segredo do Aviator</h1>
+  <p class="subtitle">Baixe gratuitamente o eBook exclusivo que te ensina a entender os gráficos do Aviator e aumentar suas chances. Funciona apenas com 888Bets.</p>
+</header>
+
+<img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="Aviator Plane" class="plane-animation">
+
+<div class="chart" id="chart-value">1.01x</div>
+
+<img src="https://via.placeholder.com/200x280.png?text=eBook+Aviator" alt="Capa do eBook" class="ebook-image">
+
+<div class="btn-container">
+  <a href="https://cutt.ly/888bets-Registar" class="btn btn-orange">🚀 Criar Conta na 888Bets</a>
+  <a href="https://t.me/FlexAgora01" class="btn btn-blue">📘 Adquirir eBook Grátis</a>
+</div>
+
+<div class="footer">
+  Este material é educativo e exclusivo para usuários da casa de apostas 888Bets. Nenhuma promessa de lucro é garantida. Jogue com responsabilidade.
+</div>
+
+<script>
+  // Simula coeficientes subindo
+  const chart = document.getElementById("chart-value");
+  const values = ["1.01x", "2.15x", "3.72x", "5.64x", "10.28x", "1.03x", "8.99x"];
+  let index = 0;
+
+  setInterval(() => {
+    chart.textContent = values[index];
+    index = (index + 1) % values.length;
+  }, 1500);
+</script>
+
+</body>
+</html>
